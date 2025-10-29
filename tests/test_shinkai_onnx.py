@@ -5,7 +5,7 @@ import os
 
 def infer_image_with_shinkai(img_path, model_path=None, out_path='output.jpg'):
     if model_path is None:
-        model_path = os.path.join(os.path.dirname(__file__), '../models/Shinkai_53.onnx')
+        model_path = os.path.join(os.path.dirname(__file__), '../models/AnimeGANv3_Hayao_36.onnx')
         model_path = os.path.abspath(model_path)
     if not os.path.exists(model_path):
         print(f"模型文件不存在: {model_path}")
@@ -44,4 +44,4 @@ def infer_image_with_shinkai(img_path, model_path=None, out_path='output.jpg'):
 
 # 用法示例
 if __name__ == "__main__":
-    infer_image_with_shinkai('input2.jpg')
+    infer_image_with_shinkai('input3.jpg')
